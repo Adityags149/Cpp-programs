@@ -2,7 +2,7 @@
 using namespace std;
 class A
 {
-    int A[3][3], B[3][3], i, j;
+    int A[3][3], B[3][3], mul[3][3], i, j, k;
 
 public:
     int matrix()
@@ -52,7 +52,20 @@ public:
         {
             for (j = 0; j < 3; j++)
             {
-                cout << A[i][j] + B[i][j] << " ";
+                mul[i][j] = 0;
+                for (k = 0; k < 3; k++)
+                {
+                    mul[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        for (i = 0; i < 3; i++)
+        {
+            for (j = 0; j < 3; j++)
+            {
+                {
+                    cout << mul[i][j] << ' ';
+                }
             }
             cout << endl;
         }
