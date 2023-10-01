@@ -45,14 +45,14 @@ public:
             cout << endl;
         }
     }
-    int multiplied()
+    int addition()
     {
         cout << "Multiplied Matix is: " << endl;
         for (i = 0; i < 3; i++)
         {
             for (j = 0; j < 3; j++)
             {
-                cout << A[i][j] * B[i][j] << " ";
+                cout << A[i][j] + B[i][j] << " ";
             }
             cout << endl;
         }
@@ -63,6 +63,6 @@ int main()
     A ob;
     ob.matrix();
     ob.matrix_output1();
-    ob.multiplied();
+    ob.addition();
     return 0;
 }
