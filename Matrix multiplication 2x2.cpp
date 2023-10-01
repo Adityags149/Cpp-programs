@@ -42,7 +42,7 @@ int main()
     {
         for (j = 0; j < 2; j++)
         {
-            cout << A[i][j] * B[i][j] << " ";
+            cout << A[i][j] + B[i][j] << " ";
         }
         cout << endl;
     }
